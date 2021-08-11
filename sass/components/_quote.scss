@@ -1,0 +1,15 @@
+.quote {
+    &__header {
+        @include font-quote;
+        padding: 40px;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin-top: 0%;
+    }
+    &__heading {
+    margin-top: 100px;
+    }
+    &__byline {
+        margin-bottom: 100px;
+    }
+}

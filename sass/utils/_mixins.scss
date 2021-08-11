@@ -1,0 +1,7 @@
+@mixin border-quote($colour:$colour-tertiary) {
+    border-top: 5px solid darken($colour, $amount: 30%);
+}
+
+@mixin font-quote($colour:$colour-tertiary) {
+    background-color: darken($colour, $amount: 10%);
+}
