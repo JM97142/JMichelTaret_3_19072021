@@ -12,6 +12,20 @@ h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
+button {
+  font-size: 2.3em;
+}
+
+.btn {
+  box-shadow: 2px 4px 4px 2px #8d8d8d;
+  padding: 30px;
+  border-radius: 50px;
+  border: #fff;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+}
+
 .quote__header {
   background-color: #bfbfbf;
   padding: 40px;

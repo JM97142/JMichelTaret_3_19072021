@@ -5,3 +5,17 @@
 @mixin font-quote($colour:$colour-tertiary) {
     background-color: darken($colour, $amount: 10%);
 }
+
+@mixin box-shadow($colour:$colour-shadow) {
+    box-shadow: 2px 4px 4px 2px $colour;
+}
+
+@mixin btn {
+    @include box-shadow;
+    padding: 30px;
+    border-radius: 50px;
+    border: $colour-white;
+    color: $colour-white;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    cursor: pointer;
+}
