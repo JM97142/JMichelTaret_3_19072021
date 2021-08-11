@@ -48,6 +48,16 @@ button {
   text-align: center;
 }
 
+.footer {
+  background-color: #262626;
+  padding: 50px;
+}
+.footer__link {
+  margin-top: 25px;
+  font-size: 0.8em;
+  color: #fff;
+}
+
 .quote {
   border-top: 5px solid #8c8c8c;
   text-align: center;

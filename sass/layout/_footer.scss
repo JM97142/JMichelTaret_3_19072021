@@ -1,0 +1,9 @@
+.footer {
+    @include font-footer;
+    padding: 50px;
+    &__link {
+        margin-top: 25px;
+        font-size: 0.8em;
+        color: $colour-white;
+    }
+}
