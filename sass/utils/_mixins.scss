@@ -6,12 +6,20 @@
     background-color: darken($colour, $amount: 10%);
 }
 
+@mixin box-radius {
+    border-radius: 40px 40px 40px 40px;
+}
+
+@mixin img-radius {
+    border-radius: 40px 40px 0px 0px;
+}
+
 @mixin font-footer($colour:$colour-tertiary) {
     background-color: darken($colour, $amount: 70%);
 }
 
 @mixin box-shadow($colour:$colour-shadow) {
-    box-shadow: 2px 4px 4px 2px $colour;
+    box-shadow: .45rem .45rem .6rem $colour;
 }
 
 @mixin btn {

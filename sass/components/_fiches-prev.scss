@@ -1,0 +1,33 @@
+.fiches-prev {
+    @include box-radius;
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+    line-height: 1.1em;
+    background-color: $colour-white;
+    &__image {
+        @include img-radius;
+        width: 870px;
+        height: 450px;
+        object-fit: cover;
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    &__content {
+        flex: 1;
+    }
+    &__heading {
+        font-size: 3.1em;
+        font-weight: bold;
+    }
+    &__byline {
+        font-size: 3em;
+    }
+    &__icon {
+        font-size: 4em;
+    }
+}

@@ -1,0 +1,36 @@
+.step {
+    &__heading {
+        font-size: 2em;
+    }
+    &__tuto {
+        counter-reset: listItem;
+        list-style-type: none;
+    }
+    &__element::before {
+        counter-increment: listItem;
+        content: counter(listItem) " ";
+        background-color: $colour-primary;
+        color: $colour-white;
+        position: absolute;
+        font-size: 2em;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        left: -.95rem;
+        display: flex;
+    }
+    &__element {
+        @include box-shadow;
+        padding: 70px;
+        border-radius: 40px;
+        margin-bottom: 50px;
+        background-color: $colour-tertiary;
+        position: relative;
+    }
+    &__icon {
+        margin-right: 50px;
+        color: $colour-shadow;
+    }
+}

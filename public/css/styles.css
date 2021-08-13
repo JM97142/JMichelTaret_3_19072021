@@ -17,7 +17,7 @@ button {
 }
 
 .btn {
-  box-shadow: 2px 4px 4px 2px #8d8d8d;
+  box-shadow: 0.45rem 0.45rem 0.6rem #8d8d8d;
   padding: 30px;
   border-radius: 50px;
   border: #fff;
@@ -27,7 +27,7 @@ button {
 }
 
 .quote__header {
-  background-color: #bfbfbf;
+  background-color: #d1d1d1;
   padding: 40px;
   font-size: 0.7em;
   font-weight: bold;
@@ -40,6 +40,75 @@ button {
   margin-bottom: 100px;
 }
 
+.fiches-prev {
+  border-radius: 40px 40px 40px 40px;
+  height: auto;
+  width: auto;
+  margin-bottom: 50px;
+  line-height: 1.1em;
+  background-color: #fff;
+}
+.fiches-prev__image {
+  border-radius: 40px 40px 0px 0px;
+  width: 870px;
+  height: 450px;
+  object-fit: cover;
+}
+.fiches-prev__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.fiches-prev__content {
+  flex: 1;
+}
+.fiches-prev__heading {
+  font-size: 3.1em;
+  font-weight: bold;
+}
+.fiches-prev__byline {
+  font-size: 3em;
+}
+.fiches-prev__icon {
+  font-size: 4em;
+}
+
+.step__heading {
+  font-size: 2em;
+}
+.step__tuto {
+  counter-reset: listItem;
+  list-style-type: none;
+}
+.step__element::before {
+  counter-increment: listItem;
+  content: counter(listItem) " ";
+  background-color: #9356DC;
+  color: #fff;
+  position: absolute;
+  font-size: 2em;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  left: -0.95rem;
+  display: flex;
+}
+.step__element {
+  box-shadow: 0.45rem 0.45rem 0.6rem #8d8d8d;
+  padding: 70px;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  background-color: #EAEAEA;
+  position: relative;
+}
+.step__icon {
+  margin-right: 50px;
+  color: #8d8d8d;
+}
+
 .header {
   width: 100%;
 }
@@ -49,20 +118,33 @@ button {
 }
 
 .footer {
-  background-color: #262626;
+  background-color: #383838;
   padding: 50px;
 }
 .footer__link {
   margin-top: 25px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #fff;
 }
 
 .quote {
-  border-top: 5px solid #8c8c8c;
+  border-top: 5px solid #9e9e9e;
   text-align: center;
-  padding: 0px 30px 50px 30px;
-  background-color: #D8D8D8;
+  padding: 0px 50px 100px 50px;
+  background-color: #EAEAEA;
+}
+
+.step {
+  padding: 100px 50px 100px 50px;
+  background-color: #fff;
+}
+
+.fiches {
+  background-color: #EAEAEA;
+  padding: 100px 50px 100px 50px;
+}
+.fiches__heading {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

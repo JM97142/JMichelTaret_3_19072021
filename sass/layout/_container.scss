@@ -1,6 +1,19 @@
 .quote {
     @include border-quote;
     text-align: center;
-    padding: 0px 30px 50px 30px;
+    padding: 0px 50px 100px 50px;
     background-color: $colour-tertiary;
+}
+
+.step {
+    padding: 100px 50px 100px 50px;
+    background-color: $colour-white;
+}
+
+.fiches {
+    background-color: $colour-tertiary;
+    padding: 100px 50px 100px 50px;
+    &__heading {
+        margin-bottom: 50px;
+    }
 }
