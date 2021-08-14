@@ -11,6 +11,9 @@
         height: 450px;
         object-fit: cover;
     }
+    &__badge {
+        @include badge-fiches;
+    }
     &__footer {
         display: flex;
         justify-content: center;
@@ -25,9 +28,10 @@
         font-weight: bold;
     }
     &__byline {
+        color: $colour-shadow;
         font-size: 3em;
     }
     &__icon {
-        font-size: 4em;
+        @include btn-fiches;
     }
 }

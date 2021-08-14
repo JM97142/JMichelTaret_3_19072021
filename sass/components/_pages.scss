@@ -1,0 +1,14 @@
+.banner{
+    &__image {
+        @include banner-img;
+    }
+}
+
+.page {
+    &__heading {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 3em;
+    }
+}

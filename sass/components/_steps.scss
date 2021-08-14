@@ -1,6 +1,8 @@
 .step {
     &__heading {
-        font-size: 2em;
+        font-size: 2.3em;
+        margin-bottom: 50px;
+        margin-left: 25px;
     }
     &__tuto {
         counter-reset: listItem;

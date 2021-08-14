@@ -4,16 +4,28 @@ body {
   background: #fff;
 }
 
-body {
+@font-face {
+  font-family: "Shrikhand";
+  src: url("polices/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("polices/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body, html {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand";
 }
 
 button {
-  font-size: 2.3em;
+  font-size: 3em;
 }
 
 .btn {
@@ -28,15 +40,26 @@ button {
 
 .quote__header {
   background-color: #d1d1d1;
-  padding: 40px;
-  font-size: 0.7em;
+  padding: 15px;
+  font-size: 2.2em;
   font-weight: bold;
   margin-top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote__icon {
+  margin-right: 20px;
 }
 .quote__heading {
   margin-top: 100px;
+  padding: 0 100px 0px 100px;
 }
 .quote__byline {
+  margin-bottom: 100px;
+  color: #8d8d8d;
+}
+.quote__btn {
   margin-bottom: 100px;
 }
 
@@ -54,6 +77,17 @@ button {
   height: 450px;
   object-fit: cover;
 }
+.fiches-prev__badge {
+  color: #278870;
+  background-color: #99e2d0;
+  position: absolute;
+  padding: 40px;
+  border-radius: 10px;
+  right: 5rem;
+  margin-top: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
 .fiches-prev__footer {
   display: flex;
   justify-content: center;
@@ -68,6 +102,7 @@ button {
   font-weight: bold;
 }
 .fiches-prev__byline {
+  color: #8d8d8d;
   font-size: 3em;
 }
 .fiches-prev__icon {
@@ -75,7 +110,9 @@ button {
 }
 
 .step__heading {
-  font-size: 2em;
+  font-size: 2.3em;
+  margin-bottom: 50px;
+  margin-left: 25px;
 }
 .step__tuto {
   counter-reset: listItem;
@@ -109,12 +146,32 @@ button {
   color: #8d8d8d;
 }
 
-.header {
+.banner__image {
   width: 100%;
+  height: 640px;
+  object-fit: cover;
 }
+
+.page__heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+}
+
 .header__logo {
-  margin-top: 20px;
+  margin-top: 502x;
+  margin-bottom: 20px;
   text-align: center;
+}
+.header__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__icon {
+  font-size: 3em;
+  margin-right: 50px;
 }
 
 .footer {
@@ -130,13 +187,13 @@ button {
 .quote {
   border-top: 5px solid #9e9e9e;
   text-align: center;
-  padding: 0px 50px 100px 50px;
   background-color: #EAEAEA;
 }
 
 .step {
   padding: 100px 50px 100px 50px;
   background-color: #fff;
+  position: relative;
 }
 
 .fiches {
@@ -145,6 +202,13 @@ button {
 }
 .fiches__heading {
   margin-bottom: 50px;
+}
+
+.page {
+  background-color: #EAEAEA;
+  border-radius: 80px 80px 0px 0px;
+  margin-top: -4rem;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */

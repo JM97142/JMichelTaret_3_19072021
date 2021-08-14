@@ -1,7 +1,16 @@
-.header {
-    width: 100%;   
+.header {   
     &__logo {
-        margin-top: 20px;
+        margin-top: 502x;
+        margin-bottom: 20px;
         text-align: center;
+    }
+    &__page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        font-size: 3em;
+        margin-right: 50px;
     }
 }
