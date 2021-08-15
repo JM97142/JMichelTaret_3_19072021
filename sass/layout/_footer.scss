@@ -1,9 +1,16 @@
 .footer {
     @include font-footer;
     padding: 50px;
+    &__heading {
+        color: $colour-white;
+    }
     &__link {
         margin-top: 25px;
         font-size: 0.9em;
         color: $colour-white;
+    }
+    &__icon {
+        margin-right: 20px;
+        font-size: 0.7em;
     }
 }

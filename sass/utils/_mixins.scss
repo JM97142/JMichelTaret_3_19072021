@@ -7,7 +7,7 @@
 }
 
 @mixin box-radius {
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 40px;
 }
 
 @mixin img-radius {
@@ -20,12 +20,24 @@
 
 @mixin btn {
     @include box-shadow;
-    padding: 30px;
+    padding: 30px 50px 30px 50px;
     border-radius: 50px;
     border: $colour-white;
     color: $colour-white;
     background: linear-gradient($colour-secondary, $colour-primary);
     cursor: pointer;
+    font-size: 2.4em;
+}
+
+@mixin btn-commande {
+    @include box-shadow;
+    padding: 30px 100px 30px 100px;
+    border-radius: 50px;
+    border: $colour-white;
+    color: $colour-white;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    cursor: pointer;
+    font-size: 2.5em;
 }
 
 @mixin badge-fiches {
@@ -52,6 +64,26 @@
     width: 100%;
     height: 640px;
     object-fit: cover;
+}
+
+@mixin page-sub {
+    margin-top: 100px;
+    color: $colour-shadow;
+    font-size: 2.3em;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: $colour-valid;
+    padding-bottom: 20px;
+}
+
+@mixin product {
+    @include box-radius;
+    @include box-shadow;
+    margin-bottom: 30px;
+    background-color: $colour-white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 @mixin font-footer($colour:$colour-tertiary) {

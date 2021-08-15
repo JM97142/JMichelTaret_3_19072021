@@ -30,12 +30,13 @@ button {
 
 .btn {
   box-shadow: 0.45rem 0.45rem 0.6rem #8d8d8d;
-  padding: 30px;
+  padding: 30px 50px 30px 50px;
   border-radius: 50px;
   border: #fff;
   color: #fff;
   background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
+  font-size: 2.4em;
 }
 
 .quote__header {
@@ -53,7 +54,7 @@ button {
 }
 .quote__heading {
   margin-top: 100px;
-  padding: 0 100px 0px 100px;
+  padding: 0 200px 0px 200px;
 }
 .quote__byline {
   margin-bottom: 100px;
@@ -64,9 +65,8 @@ button {
 }
 
 .fiches-prev {
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 40px;
   height: auto;
-  width: auto;
   margin-bottom: 50px;
   line-height: 1.1em;
   background-color: #fff;
@@ -154,13 +154,73 @@ button {
 
 .page__heading {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 3em;
+  margin-bottom: -50px;
+}
+.page__heading-icon {
+  color: #8d8d8d;
+}
+.page__sub-heading {
+  margin-top: 100px;
+  color: #8d8d8d;
+  font-size: 2.3em;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-decoration-color: #99e2d0;
+  padding-bottom: 20px;
 }
 
+.product {
+  border-radius: 40px;
+  box-shadow: 0.45rem 0.45rem 0.6rem #8d8d8d;
+  margin-bottom: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.product__content {
+  flex: 1;
+  line-height: 1em;
+}
+.product__heading {
+  font-size: 2.5em;
+}
+.product__byline {
+  color: #8d8d8d;
+  font-size: 2.3em;
+  text-overflow: ellipsis;
+}
+.product__price {
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.btn-page {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.btn-command {
+  box-shadow: 0.45rem 0.45rem 0.6rem #8d8d8d;
+  padding: 30px 100px 30px 100px;
+  border-radius: 50px;
+  border: #fff;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+.header {
+  margin-top: 50px;
+}
 .header__logo {
-  margin-top: 502x;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -178,10 +238,17 @@ button {
   background-color: #383838;
   padding: 50px;
 }
+.footer__heading {
+  color: #fff;
+}
 .footer__link {
   margin-top: 25px;
   font-size: 0.9em;
   color: #fff;
+}
+.footer__icon {
+  margin-right: 20px;
+  font-size: 0.7em;
 }
 
 .quote {
@@ -207,6 +274,7 @@ button {
 .page {
   background-color: #EAEAEA;
   border-radius: 80px 80px 0px 0px;
+  padding: 0px 40px 100px 40px;
   margin-top: -4rem;
   position: relative;
 }
