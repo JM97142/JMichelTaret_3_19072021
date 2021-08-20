@@ -1,0 +1,61 @@
+.step__element:hover{
+    background-color: lighten($color: $colour-primary, $amount: 35%);
+    > .step__icon {
+        color: $colour-primary;
+    }
+}
+
+@keyframes apparition {
+    0% {
+        transform: translateY(1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.product {
+    animation: apparition 2s both;
+}
+
+.delay0 {
+    animation-delay: 0s;
+}
+
+.delay1 {
+    animation-delay: .2s;
+}
+
+.delay2 {
+    animation-delay: .4s;
+}
+
+.delay3 {
+    animation-delay: .6s;
+}
+
+.delay4 {
+    animation-delay: .8s;
+}
+
+.delay5 {
+    animation-delay: 1s;
+}
+
+.delay6 {
+    animation-delay: 1.2s;
+}
+
+.delay7 {
+    animation-delay: 1.4s;
+}
+
+.delay8 {
+    animation-delay: 1.6s;
+}
+
+.delay9 {
+    animation-delay: 1.8s;
+}
