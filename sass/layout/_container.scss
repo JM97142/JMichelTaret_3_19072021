@@ -5,23 +5,35 @@
 }
 
 .step {
-    padding: 100px 50px 100px 50px;
     background-color: $colour-white;
     position: relative;
 }
 
 .fiches {
+    padding: 50px;
     background-color: $colour-tertiary;
-    padding: 100px 50px 100px 50px;
-    &__heading {
-        margin-bottom: 50px;
-    }
 }
 
 .page {
     background-color: $colour-tertiary;
-    border-radius: 80px 80px 0px 0px;
-    padding: 0px 40px 100px 40px;
-    margin-top: -4rem;
     position: relative;
+}
+
+@media screen and (max-device-width: 480px) {
+    .step {
+        padding: 100px 50px 100px 50px;
+    }
+
+    .fiches {
+        padding: 100px 50px 100px 50px;
+        &__heading {
+            margin-bottom: 50px;
+        }
+    }
+
+    .page {
+        border-radius: 80px 80px 0px 0px;
+        padding: 0px 40px 100px 40px;
+        margin-top: -4rem;
+    }
 }

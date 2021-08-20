@@ -5,12 +5,26 @@
         color: $colour-white;
     }
     &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         margin-top: 25px;
         font-size: 0.9em;
         color: $colour-white;
     }
     &__icon {
         margin-right: 20px;
-        font-size: 0.7em;
+        font-size: 1em;
+    }
+}
+    
+@media screen and (max-device-width: 480px) {
+    .footer {
+        &__link {
+            display: block;
+        }
+        &__icon {
+            font-size: 0.7em;
+        }
     }
 }

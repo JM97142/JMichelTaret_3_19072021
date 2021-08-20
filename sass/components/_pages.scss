@@ -1,53 +1,56 @@
-.banner{
-    &__image {
-        @include banner-img;
+@media screen and (max-device-width: 480px) {
+    .banner{
+        &__image {
+            @include banner-img;
+        }
     }
-}
+    
+    .page {
+        &__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 3em;
+            margin-bottom: -50px;
+        }
+        &__heading-icon {
+            color: $colour-shadow;
+            font-size: 1.2em;
+        }
+        &__sub-heading {
+            @include page-sub;
+        }
+    }
 
-.page {
-    &__heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 3em;
-        margin-bottom: -50px;
+    .product {
+        @include product;
+        &__content {
+            flex: 1;
+            line-height: 1em;
+        }
+        &__heading {
+            font-size: 2.5em;
+        }
+        &__byline {
+            color: $colour-shadow;
+            font-size: 2.3em;
+            text-overflow: ellipsis;
+        }
+        &__price {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
     }
-    &__heading-icon {
-        color: $colour-shadow
-    }
-    &__sub-heading {
-        @include page-sub;
-    }
-}
 
-.product {
-    @include product;
-    &__content {
-        flex: 1;
-        line-height: 1em;
+    .btn-page {
+        margin-top: 100px;
+        text-align: center;
     }
-    &__heading {
-        font-size: 2.5em;
-    }
-    &__byline {
-        color: $colour-shadow;
-        font-size: 2.3em;
-        text-overflow: ellipsis;
-    }
-    &__price {
-        font-size: 2.5em;
-        font-weight: bold;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-}
 
-.btn-page {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.btn-command {
-    @include btn-commande;
+    .btn-command {
+        @include btn-commande;
+    }
 }
