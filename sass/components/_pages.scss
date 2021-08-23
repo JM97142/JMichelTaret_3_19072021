@@ -1,15 +1,48 @@
+.banner {
+    &__image {
+        @include banner-img;
+    }
+}
+
+.page {
+    &__heading {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+    }
+    &__sub-heading {
+        @include page-sub;
+    }
+    &__contenair {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.product {
+    @include product;
+}
+
+.btn-page {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn-command {
+    @include btn-commande;
+    font-size: 1em;
+}
+
 @media screen and (max-device-width: 480px) {
-    .banner{
+    .banner {
         &__image {
-            @include banner-img;
+            @include banner-img-mobile;
         }
     }
-    
+
     .page {
         &__heading {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             font-size: 3em;
             margin-bottom: -50px;
         }
@@ -18,7 +51,10 @@
             font-size: 1.2em;
         }
         &__sub-heading {
-            @include page-sub;
+            @include page-sub-mobile;
+        }
+        &__contenair {
+            display: block;
         }
     }
 
@@ -52,5 +88,6 @@
 
     .btn-command {
         @include btn-commande;
+        font-size: 2.5em;
     }
 }

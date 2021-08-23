@@ -2,6 +2,15 @@
     &__logo {
         text-align: center;
     }
+    &__page  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        margin-right: 20px;
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-device-width: 480px) {
@@ -9,7 +18,9 @@
         margin-top: 50px;  
         &__logo {
             margin-bottom: 20px;
-            text-align: center;
+        }
+        &__icon {
+            font-size: 3em;
         }
     }
 }

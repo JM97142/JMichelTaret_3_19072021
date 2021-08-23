@@ -1,11 +1,5 @@
 body {
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
     background: $colour-white;
-}
-
-@media screen and (max-device-width: 480px) {
-    body {
-        width: auto;
-    }
 }

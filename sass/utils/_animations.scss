@@ -18,44 +18,34 @@
 
 .product {
     animation: apparition 2s both;
-}
-
-.delay0 {
-    animation-delay: 0s;
-}
-
-.delay1 {
-    animation-delay: .2s;
-}
-
-.delay2 {
-    animation-delay: .4s;
-}
-
-.delay3 {
-    animation-delay: .6s;
-}
-
-.delay4 {
-    animation-delay: .8s;
-}
-
-.delay5 {
-    animation-delay: 1s;
-}
-
-.delay6 {
-    animation-delay: 1.2s;
-}
-
-.delay7 {
-    animation-delay: 1.4s;
-}
-
-.delay8 {
-    animation-delay: 1.6s;
-}
-
-.delay9 {
-    animation-delay: 1.8s;
+    &__delay0 {
+        animation-delay: 0s;
+    }
+    &__delay1 {
+        animation-delay: .2s;
+    }
+    &__delay2 {
+        animation-delay: .4s;
+    }
+    &__delay3 {
+        animation-delay: .6s;
+    }
+    &__delay4 {
+        animation-delay: .8s;
+    }
+    &__delay5 {
+        animation-delay: 1s;
+    }
+    &__delay6 {
+        animation-delay: 1.2s;
+    }
+    &__delay7 {
+        animation-delay: 1.4s;
+    }
+    &__delay8 {
+        animation-delay: 1.6s;
+    }
+    &__delay9 {
+        animation-delay: 1.8s;
+    }
 }
