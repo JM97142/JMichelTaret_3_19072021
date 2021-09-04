@@ -5,6 +5,11 @@
         align-items: center;
         justify-content: space-around;
     }
+    @include for-phone-only {
+        &__heading {
+            font-size: 4em;
+        }
+    }
 }
 
 .fiches-prev {
@@ -44,16 +49,7 @@
         @include btn-fiches;
         font-size: 2em;
     }
-}
-
-@media screen and (max-device-width: 480px) {
-    .fiches{
-        &__heading {
-            font-size: 4em;
-        }
-    }
-
-    .fiches-prev {
+    @include for-phone-only {
         @include box-radius;
         width: auto;
         height: auto;

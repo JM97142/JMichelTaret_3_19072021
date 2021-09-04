@@ -13,10 +13,7 @@
         margin-bottom: 30px;
         font-size: 0.8em;
     }
-}
-
-@media screen and (max-device-width: 480px) {
-    .quote {
+    @include for-phone-only {
         &__header {
             @include font-quote;
             padding: 15px;

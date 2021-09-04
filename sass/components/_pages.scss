@@ -2,12 +2,17 @@
     &__image {
         @include banner-img;
     }
+    @include for-phone-only {
+        &__image {
+            @include banner-img-mobile;
+        }
+    }
 }
 
 .page {
     &__heading {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-size: 2em;
     }
@@ -18,37 +23,10 @@
         display: flex;
         justify-content: space-around;
     }
-}
-
-.product {
-    @include product;
-}
-
-.btn-page {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.btn-command {
-    @include btn-commande;
-    font-size: 1em;
-}
-
-@media screen and (max-device-width: 480px) {
-    .banner {
-        &__image {
-            @include banner-img-mobile;
-        }
-    }
-
-    .page {
+    @include for-phone-only {
         &__heading {
             font-size: 3em;
             margin-bottom: -50px;
-        }
-        &__heading-icon {
-            color: $colour-shadow;
-            font-size: 1.2em;
         }
         &__sub-heading {
             @include page-sub-mobile;
@@ -57,12 +35,25 @@
             display: block;
         }
     }
+}
 
-    .product {
+.product {
+    @include product;
+    &__content {
+        flex: 1;
+    }
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: bold;
+    }
+    @include for-phone-only {
         @include product;
         &__content {
             flex: 1;
             line-height: 1em;
+            text-overflow: ellipsis;
         }
         &__heading {
             font-size: 2.5em;
@@ -70,24 +61,26 @@
         &__byline {
             color: $colour-shadow;
             font-size: 2.3em;
-            text-overflow: ellipsis;
         }
         &__price {
             font-size: 2.5em;
-            font-weight: bold;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
         }
     }
+}
 
-    .btn-page {
+.btn-page {
+    margin-top: 100px;
+    text-align: center;
+    @include for-phone-only {
         margin-top: 100px;
         text-align: center;
     }
+}
 
-    .btn-command {
-        @include btn-commande;
+.btn-command {
+    @include btn-commande;
+    font-size: 1em;
+    @include for-phone-only {
         font-size: 2.5em;
     }
 }

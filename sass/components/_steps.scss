@@ -40,10 +40,7 @@
         margin-right: 40px;
         color: $colour-shadow;
     }
-}
-
-@media screen and (max-device-width: 480px) {
-    .step {
+    @include for-phone-only {
         &__heading {
             font-size: 2.3em;
         }

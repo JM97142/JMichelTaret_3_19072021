@@ -7,11 +7,20 @@
 .step {
     background-color: $colour-white;
     position: relative;
+    @include for-phone-only {
+        padding: 100px 50px 100px 50px;
+    }
 }
 
 .fiches {
     padding: 50px;
     background-color: $colour-tertiary;
+    @include for-phone-only {
+        padding: 100px 50px 100px 50px;
+        &__heading {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .page {
@@ -20,21 +29,7 @@
     padding: 0px 40px 100px 40px;
     position: relative;
     margin-top: -4rem;
-}
-
-@media screen and (max-device-width: 480px) {
-    .step {
-        padding: 100px 50px 100px 50px;
-    }
-
-    .fiches {
-        padding: 100px 50px 100px 50px;
-        &__heading {
-            margin-bottom: 50px;
-        }
-    }
-
-    .page {
+    @include for-phone-only {
         border-radius: 80px 80px 0px 0px;
         padding: 0px 40px 100px 40px;
     }

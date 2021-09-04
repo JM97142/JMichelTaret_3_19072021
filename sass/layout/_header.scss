@@ -11,10 +11,7 @@
         margin-right: 20px;
         font-size: 1.5em;
     }
-}
-
-@media screen and (max-device-width: 480px) {
-    .header { 
+    @include for-phone-only {
         margin-top: 50px;  
         &__logo {
             margin-bottom: 20px;

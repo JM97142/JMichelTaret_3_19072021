@@ -84,6 +84,7 @@
     margin-top: 100px;
     color: $colour-shadow;
     font-size: 2.3em;
+    text-align: start;
     text-decoration-line: underline;
     text-underline-position: under;
     text-decoration-color: $colour-valid;
@@ -96,10 +97,14 @@
     margin-bottom: 30px;
     background-color: $colour-white;
     display: flex;
-    justify-content: space-around;
     padding: 20px;
+    cursor: pointer;
 }
 
 @mixin font-footer($colour:$colour-tertiary) {
     background-color: darken($colour, $amount: 70%);
+}
+
+@mixin for-phone-only {
+    @media screen and (max-device-width: 480px) { @content; }
 }
