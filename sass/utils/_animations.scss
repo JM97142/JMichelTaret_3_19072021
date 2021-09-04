@@ -109,6 +109,16 @@
         cursor: pointer;
         position: relative;
     }
+    &__btn--home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1em;
+        background-color: transparent;
+        border: 0 solid transparent;
+        cursor: pointer;
+        position: relative;
+    }
     &__like {
         position: absolute;
         top: -40px;
@@ -127,6 +137,12 @@
         opacity: 1;
     }
     &__btn:hover .menu__like--on {
+        opacity: 0;
+    }
+    &__btn--home:hover .menu__like--off {
+        opacity: 1;
+    }
+    &__btn--home:hover .menu__like--on {
         opacity: 0;
     }
 }

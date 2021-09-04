@@ -105,6 +105,16 @@
   cursor: pointer;
   position: relative;
 }
+.menu__btn--home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  background-color: transparent;
+  border: 0 solid transparent;
+  cursor: pointer;
+  position: relative;
+}
 .menu__like {
   position: absolute;
   top: -40px;
@@ -123,6 +133,12 @@
   opacity: 1;
 }
 .menu__btn:hover .menu__like--on {
+  opacity: 0;
+}
+.menu__btn--home:hover .menu__like--off {
+  opacity: 1;
+}
+.menu__btn--home:hover .menu__like--on {
   opacity: 0;
 }
 
@@ -227,6 +243,7 @@ button {
   margin-bottom: 50px;
   line-height: 1.1em;
   background-color: #fff;
+  cursor: pointer;
 }
 .fiches-prev__image {
   border-radius: 40px 40px 0px 0px;
@@ -262,7 +279,6 @@ button {
   font-size: 1em;
 }
 .fiches-prev__icon {
-  font-size: 4em;
   font-size: 2em;
 }
 @media screen and (max-device-width: 480px) {

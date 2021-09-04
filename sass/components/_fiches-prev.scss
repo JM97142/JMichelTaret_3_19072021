@@ -19,6 +19,7 @@
     margin-bottom: 50px;
     line-height: 1.1em;
     background-color: $colour-white;
+    cursor: pointer;
     &__image {
         @include img-radius;
         width: 650px;
@@ -46,7 +47,6 @@
         font-size: 1em;
     }
     &__icon {
-        @include btn-fiches;
         font-size: 2em;
     }
     @include for-phone-only {

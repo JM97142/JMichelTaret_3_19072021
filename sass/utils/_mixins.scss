@@ -53,10 +53,6 @@
     color: darken($colour, $amount: 40%);
 }
 
-@mixin btn-fiches {
-    font-size: 4em;
-}
-
 @mixin banner-img {
     width: 1465px;
     height: 530px;
