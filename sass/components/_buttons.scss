@@ -5,3 +5,35 @@ button {
 .btn {
     @include btn;
 }
+
+.page__btn {
+    position: relative;
+    font-size: 0.8em;
+}
+
+.fiches-prev__btn {
+    position: relative;
+    font-size: 1em;
+    margin-right: 40px;
+    @include for-phone-only {
+        font-size: 2.5em;
+        margin-top: -20px;
+    }
+}
+
+.btn-page {
+    margin-top: 100px;
+    text-align: center;
+    @include for-phone-only {
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+.btn-command {
+    @include btn-commande;
+    font-size: 1em;
+    @include for-phone-only {
+        font-size: 2.5em;
+    }
+}

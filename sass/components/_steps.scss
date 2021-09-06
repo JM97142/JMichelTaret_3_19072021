@@ -40,6 +40,14 @@
         margin-right: 40px;
         color: $colour-shadow;
     }
+    @include for-tablet {
+        &__element {
+            width: 200px;
+        }
+        &__icon {
+            margin-right: 10px;
+        }
+    }
     @include for-phone-only {
         &__heading {
             font-size: 2.3em;

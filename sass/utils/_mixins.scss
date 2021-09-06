@@ -44,6 +44,17 @@
     position: absolute;
     padding: 40px;
     border-radius: 10px;
+    right: 50rem;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+@mixin badge-fiches-mobile {
+    @include colour-badge;
+    background-color: $colour-valid;
+    position: absolute;
+    padding: 40px;
+    border-radius: 10px;
     right: 5rem;
     margin-top: 40px;
     font-weight: bold;
@@ -54,8 +65,14 @@
 }
 
 @mixin banner-img {
-    width: 1465px;
+    width: 100%;
     height: 530px;
+    object-fit: cover;
+}
+
+@mixin banner-img-tablet {
+    width: 100%;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -77,14 +94,9 @@
 }
 
 @mixin page-sub-mobile {
-    margin-top: 100px;
-    color: $colour-shadow;
-    font-size: 2.3em;
+    font-size: 2.5em;
     text-align: start;
-    text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: $colour-valid;
-    padding-bottom: 20px;
+    text-decoration-line: none;
 }
 
 @mixin product {
@@ -103,4 +115,8 @@
 
 @mixin for-phone-only {
     @media screen and (max-device-width: 480px) { @content; }
+}
+
+@mixin for-tablet {
+    @media screen and (min-device-width: 480px) and (max-width: 991px) { @content; }
 }

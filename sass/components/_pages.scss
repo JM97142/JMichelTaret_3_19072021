@@ -2,6 +2,11 @@
     &__image {
         @include banner-img;
     }
+    @include for-tablet {
+        &__image {
+            @include banner-img-tablet;
+        }
+    }
     @include for-phone-only {
         &__image {
             @include banner-img-mobile;
@@ -31,6 +36,15 @@
         &__sub-heading {
             @include page-sub-mobile;
         }
+        &__sub-heading::after {
+            content: "";
+            width: 6rem;
+            height: .45rem;
+            background-color: $colour-valid;
+            position: absolute;
+            margin-top: 60px;
+            left: 40px;
+        }
         &__contenair {
             display: block;
         }
@@ -41,6 +55,18 @@
     @include product;
     &__content {
         flex: 1;
+        h3 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 1em;
+        }
+        p {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 0.8em;
+        }
     }
     &__price {
         display: flex;
@@ -48,39 +74,30 @@
         align-items: flex-end;
         font-weight: bold;
     }
-    @include for-phone-only {
-        @include product;
+    @include for-tablet {
         &__content {
-            flex: 1;
-            line-height: 1em;
-            text-overflow: ellipsis;
+            h3 {
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 0.8em;
+            }
         }
-        &__heading {
-            font-size: 2.5em;
+        &__price {
+            font-size: 0.8em;
         }
-        &__byline {
-            color: $colour-shadow;
-            font-size: 2.3em;
+    }
+    @include for-phone-only {
+        &__content {
+            h3 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 2.3em;
+            }
         }
         &__price {
             font-size: 2.5em;
         }
-    }
-}
-
-.btn-page {
-    margin-top: 100px;
-    text-align: center;
-    @include for-phone-only {
-        margin-top: 100px;
-        text-align: center;
-    }
-}
-
-.btn-command {
-    @include btn-commande;
-    font-size: 1em;
-    @include for-phone-only {
-        font-size: 2.5em;
     }
 }

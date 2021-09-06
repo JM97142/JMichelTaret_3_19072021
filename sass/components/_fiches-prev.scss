@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding-left: 20px;
     }
     &__content {
         flex: 1;
@@ -46,8 +46,11 @@
         color: $colour-shadow;
         font-size: 1em;
     }
-    &__icon {
-        font-size: 2em;
+    @include for-tablet {
+        &__badge {
+            @include badge-fiches-mobile;
+            margin-right: 100px;
+        }
     }
     @include for-phone-only {
         @include box-radius;
@@ -59,6 +62,7 @@
             object-fit: cover;
         }
         &__badge {
+            @include badge-fiches-mobile;
             font-size: 2.5em;
         }
         &__heading {
@@ -67,9 +71,6 @@
         &__byline {
             color: $colour-shadow;
             font-size: 3em;
-        }
-        &__icon {
-            font-size: 4em;
         }
     }
 }

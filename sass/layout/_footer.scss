@@ -17,6 +17,11 @@
         margin-right: 20px;
         font-size: 1em;
     }
+    @include for-tablet {
+        &__link {
+            font-size: 1em;
+        }
+    }
     @include for-phone-only {
         &__link {
             display: block;
@@ -45,6 +50,11 @@
     &__icon {
         margin-right: 20px;
         font-size: 1em;
+    }
+    @include for-tablet {
+        &__link {
+            font-size: 1em;
+        }
     }
     @include for-phone-only {
         font-size: 2em;
