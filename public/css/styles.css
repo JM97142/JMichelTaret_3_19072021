@@ -133,10 +133,6 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-family: "Shrikhand";
-}
-
 button {
   font-size: 2.4em;
 }
@@ -431,6 +427,7 @@ button {
   justify-content: space-between;
   align-items: center;
   font-size: 2em;
+  font-family: "Shrikhand";
 }
 .page__sub-heading {
   margin-top: 100px;
@@ -523,28 +520,15 @@ button {
   }
 }
 
-.header__logo {
-  text-align: center;
-}
-.header__page {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 .header__icon {
+  font-size: 3.5em;
   margin-right: 20px;
-  font-size: 1.5em;
-}
-@media screen and (max-device-width: 480px) {
-  .header {
-    margin-top: 50px;
-  }
-  .header__logo {
-    margin-bottom: 20px;
-  }
-  .header__icon {
-    font-size: 3em;
-  }
 }
 
 @keyframes loaderItem {
@@ -594,6 +578,8 @@ button {
 .footer__heading {
   color: #fff;
   text-align: center;
+  font-family: "Shrikhand";
+  font-size: 1.5em;
 }
 .footer__link {
   display: flex;
@@ -628,6 +614,7 @@ button {
 .footer-page__heading {
   color: #fff;
   text-align: center;
+  font-family: "Shrikhand";
 }
 .footer-page__link {
   display: flex;
@@ -649,6 +636,9 @@ button {
 @media screen and (max-device-width: 480px) {
   .footer-page {
     font-size: 2em;
+  }
+  .footer-page__heading {
+    font-size: 1.5em;
   }
   .footer-page__link {
     display: block;

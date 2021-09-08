@@ -1,23 +1,10 @@
 .header {
-    &__logo {
-        text-align: center;
-    }
-    &__page  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     &__icon {
+        font-size: 3.5em;
         margin-right: 20px;
-        font-size: 1.5em;
-    }
-    @include for-phone-only {
-        margin-top: 50px;  
-        &__logo {
-            margin-bottom: 20px;
-        }
-        &__icon {
-            font-size: 3em;
-        }
     }
 }

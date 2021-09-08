@@ -4,6 +4,8 @@
     &__heading {
         color: $colour-white;
         text-align: center;
+        font-family: 'Shrikhand';
+        font-size: 1.5em;
     }
     &__link {
         display: flex;
@@ -38,6 +40,7 @@
     &__heading {
         color: $colour-white;
         text-align: center;
+        font-family: 'Shrikhand';
     }
     &__link {
         display: flex;
@@ -58,6 +61,9 @@
     }
     @include for-phone-only {
         font-size: 2em;
+        &__heading {
+            font-size: 1.5em;
+        }
         &__link {
             display: block;
             font-size: 1.2em;
