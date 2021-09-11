@@ -5,6 +5,11 @@
         align-items: center;
         justify-content: space-around;
     }
+    @include for-tablet {
+        &__heading {
+            margin-left: 40px;
+        }
+    }
     @include for-phone-only {
         &__heading {
             font-size: 4em;
@@ -19,12 +24,12 @@
     margin-bottom: 50px;
     line-height: 1.1em;
     background-color: $colour-white;
-    cursor: pointer;
     &__image {
         @include img-radius;
         width: 650px;
         height: 250px;
         object-fit: cover;
+        cursor: pointer;
     }
     &__badge {
         @include badge-fiches;
@@ -47,9 +52,13 @@
         font-size: 1em;
     }
     @include for-tablet {
+        width: 350px;
         &__badge {
-            @include badge-fiches-mobile;
+            @include badge-fiches-tablet;
             margin-right: 100px;
+        }
+        &__image {
+            width: 350px;
         }
     }
     @include for-phone-only {

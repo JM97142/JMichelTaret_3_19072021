@@ -29,6 +29,23 @@
         display: flex;
         justify-content: space-around;
     }
+    @include for-tablet {
+        &__sub-heading {
+            @include page-sub-tablet;
+        }
+        &__sub-heading::after {
+            content: "";
+            width: 4rem;
+            height: .45rem;
+            background-color: $colour-valid;
+            position: absolute;
+            margin-top: 40px;
+            left: 40px;
+        }
+        &__contenair {
+            flex-direction: column;
+        }
+    }
     @include for-phone-only {
         &__heading {
             font-size: 3em;
@@ -47,7 +64,7 @@
             left: 40px;
         }
         &__contenair {
-            display: block;
+            flex-direction: column;
         }
     }
 }
@@ -78,14 +95,14 @@
     @include for-tablet {
         &__content {
             h3 {
-                font-size: 0.8em;
+                font-size: 1.3em;
             }
             p {
-                font-size: 0.8em;
+                font-size: 1.2em;
             }
         }
         &__price {
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
     }
     @include for-phone-only {

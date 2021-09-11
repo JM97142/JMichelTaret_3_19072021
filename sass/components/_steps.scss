@@ -25,6 +25,7 @@
         justify-content: center;
         align-items: center;
         left: -.95rem;
+        margin-top: -10px;
     }
     &__element {
         @include box-shadow;
@@ -35,10 +36,11 @@
         background-color: $colour-tertiary;
         position: relative;
         font-weight: bold;
+        cursor: pointer;
     }
     &__icon {
-        margin-right: 40px;
         color: $colour-shadow;
+        margin-right: 40px;
     }
     @include for-tablet {
         &__element {
@@ -53,17 +55,19 @@
             font-size: 2.3em;
         }
         &__tuto {
-            display: block;
+            flex-direction: column;
         }
         &__element::before {
-            font-size: 2em;
+            margin-top: 0px;
+            font-size: 0.9em;
             height: 3.5rem;
             width: 3.5rem;
         }
         &__element {
-            width: auto;
-            height: auto;
+            width: 750px;
+            height: 50px;
             padding: 70px;
+            font-size: 3em;
         }
         &__icon {
             margin-right: 50px;
