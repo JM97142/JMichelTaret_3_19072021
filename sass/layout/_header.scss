@@ -7,4 +7,16 @@
         font-size: 3.5em;
         margin-right: 20px;
     }
+    @include for-phone-only {
+        &__icon {
+            font-size: 1.7em;
+            margin-right: 10px;
+        }
+        &__logo img{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

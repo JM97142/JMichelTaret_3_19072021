@@ -12,7 +12,7 @@
     }
     @include for-phone-only {
         &__heading {
-            font-size: 4em;
+            font-size: 2em;
         }
     }
 }
@@ -62,24 +62,19 @@
         }
     }
     @include for-phone-only {
-        @include box-radius;
-        width: auto;
+        @include box-radius-mobile;
         height: auto;
         &__image {
-            width: 850px;
-            height: 450px;
+            @include img-radius-mobile;
+            width: 100%;
+            height: 200px;
             object-fit: cover;
         }
         &__badge {
             @include badge-fiches-mobile;
-            font-size: 2.5em;
         }
         &__heading {
-            font-size: 3.1em;
-        }
-        &__byline {
-            color: $colour-shadow;
-            font-size: 3em;
+            font-size: 1.2em;
         }
     }
 }

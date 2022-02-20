@@ -48,7 +48,7 @@
     }
     @include for-phone-only {
         &__heading {
-            font-size: 3em;
+            font-size: 1.2em;
             margin-bottom: -50px;
         }
         &__sub-heading {
@@ -60,7 +60,7 @@
             height: .45rem;
             background-color: $colour-valid;
             position: absolute;
-            margin-top: 60px;
+            margin-top: 40px;
             left: 40px;
         }
         &__contenair {
@@ -106,16 +106,14 @@
         }
     }
     @include for-phone-only {
+        @include product-mobile;
         &__content {
             h3 {
-                font-size: 2.5em;
-            }
-            p {
-                font-size: 2.3em;
+                font-size: 1.2em;
             }
         }
         &__price {
-            font-size: 2.5em;
+            font-size: 1em;
         }
     }
 }

@@ -74,6 +74,29 @@ li.step__element:hover{
         transform: rotate(180deg);
         transition-duration: .5s;
     }
+    &__check1 {
+        background-color: $colour-valid;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+        opacity: 0;
+    }
+    &__wrapIcon1 {
+        height: 2rem;
+        width: 2rem;
+        background-color: $colour-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+    }
     &__icon {
         color: $colour-valid;
         opacity: 0;
@@ -84,10 +107,19 @@ li.step__element:hover{
         margin: -1.3rem -1.3rem -1.3rem 0rem;
         width: 25%;
     }
+    &:hover .product__check1 {
+        opacity: 1;
+        background: $colour-valid;
+        margin: -1.3rem -1.3rem -1.3rem 0rem;
+        width: 25%;
+    }
     &:hover .product__icon {
         opacity: 1;
     }
     &:hover .product__wrapIcon {
+        transform: rotate(0);
+    }
+    &:hover .product__wrapIcon1 {
         transform: rotate(0);
     }
     &:hover .product__content {
@@ -106,12 +138,14 @@ li.step__element:hover{
         }
     }
     @include for-phone-only {
-        &__wrapIcon {
-            height: 4rem;
-            width: 4rem;
-        }
         &__icon {
-            font-size: 2em;
+            font-size: 1em;
+        }
+        &:hover .product__check {
+            width: 30%;
+        }
+        &:hover .product__check1 {
+            width: 25%;
         }
         &:hover .product__price {
             padding-right: 15px;

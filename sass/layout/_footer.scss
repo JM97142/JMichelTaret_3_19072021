@@ -25,6 +25,11 @@
         }
     }
     @include for-phone-only {
+        padding: 20px;
+        &__heading {
+            text-align: left;
+            font-size: 0.7em;
+        }
         &__link {
             display: block;
         }
@@ -36,7 +41,6 @@
 
 .footer-page {
     @include font-footer;
-    padding: 50px;
     &__heading {
         color: $colour-white;
         text-align: center;
@@ -60,13 +64,14 @@
         }
     }
     @include for-phone-only {
-        font-size: 2em;
+        padding: 20px;
         &__heading {
-            font-size: 1.5em;
+            font-size: 1em;
+            text-align: left;
         }
         &__link {
             display: block;
-            font-size: 1.2em;
+            font-size: 1em;
         }
     }
 }

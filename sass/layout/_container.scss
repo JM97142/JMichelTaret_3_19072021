@@ -7,19 +7,13 @@
 .step {
     background-color: $colour-white;
     position: relative;
-    @include for-phone-only {
-        padding: 100px 50px 100px 50px;
-    }
 }
 
 .fiches {
     padding: 50px;
     background-color: $colour-tertiary;
     @include for-phone-only {
-        padding: 100px 50px 100px 50px;
-        &__heading {
-            margin-bottom: 50px;
-        }
+        padding: 10px;
     }
 }
 
