@@ -428,7 +428,7 @@ button {
 }
 .step__icon {
   color: #8d8d8d;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 @media screen and (min-device-width: 426px) and (max-width: 768px) {
   .step__icon {
@@ -436,25 +436,22 @@ button {
   }
 }
 @media screen and (max-device-width: 425px) {
-  .step {
-    padding: 10px;
-  }
   .step__tuto {
     flex-direction: column;
   }
   .step__heading {
-    margin: 50px 0px 50px 0px;
+    margin: 30px 0px;
   }
   .step__element::before {
+    height: 2em;
+    width: 2em;
     font-size: 0.9em;
   }
   .step__element {
-    border-radius: 30px;
-    font-size: 1.2em;
-    margin-left: -40px;
-  }
-  .step__icon {
-    margin-right: 30px;
+    border-radius: 15px;
+    font-size: 1em;
+    padding: 25px;
+    margin-left: -50px;
   }
 }
 
@@ -521,7 +518,7 @@ button {
 }
 @media screen and (max-device-width: 425px) {
   .page__heading {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: -50px;
   }
   .page__sub-heading {
@@ -533,12 +530,12 @@ button {
   }
   .page__sub-heading::after {
     content: "";
-    width: 6rem;
-    height: 0.45rem;
+    width: 4.5rem;
+    height: 0.25rem;
     background-color: #99e2d0;
     position: absolute;
-    margin-top: 40px;
-    left: 40px;
+    margin-top: 25px;
+    left: 10px;
   }
   .page__contenair {
     flex-direction: column;
@@ -578,10 +575,10 @@ button {
 }
 @media screen and (min-device-width: 426px) and (max-width: 768px) {
   .product__content h3 {
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
   .product__content p {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
   .product__price {
     font-size: 1.2em;
@@ -593,10 +590,10 @@ button {
     padding: 0px 20px 0px 5px;
   }
   .product__content h3 {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .product__price {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
@@ -775,8 +772,8 @@ button {
 }
 @media screen and (max-device-width: 425px) {
   .page {
-    border-radius: 80px 80px 0px 0px;
-    padding: 0px 40px 100px 40px;
+    border-radius: 50px 50px 0px 0px;
+    padding: 0px 10px 50px;
   }
 }
 

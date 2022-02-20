@@ -48,7 +48,7 @@
     }
     @include for-phone-only {
         &__heading {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: -50px;
         }
         &__sub-heading {
@@ -56,12 +56,12 @@
         }
         &__sub-heading::after {
             content: "";
-            width: 6rem;
-            height: .45rem;
+            width: 4.5rem;
+            height: .25rem;
             background-color: $colour-valid;
             position: absolute;
-            margin-top: 40px;
-            left: 40px;
+            margin-top: 25px;
+            left: 10px;
         }
         &__contenair {
             flex-direction: column;
@@ -95,10 +95,10 @@
     @include for-tablet {
         &__content {
             h3 {
-                font-size: 1.3em;
+                font-size: 0.9em;
             }
             p {
-                font-size: 1.2em;
+                font-size: 0.8em;
             }
         }
         &__price {
@@ -109,11 +109,11 @@
         @include product-mobile;
         &__content {
             h3 {
-                font-size: 1.2em;
+                font-size: 0.9em;
             }
         }
         &__price {
-            font-size: 1em;
+            font-size: 0.8em;
         }
     }
 }

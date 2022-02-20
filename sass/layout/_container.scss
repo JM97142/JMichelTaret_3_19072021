@@ -24,7 +24,7 @@
     position: relative;
     margin-top: -4rem;
     @include for-phone-only {
-        border-radius: 80px 80px 0px 0px;
-        padding: 0px 40px 100px 40px;
+        border-radius: 50px 50px 0px 0px;
+        padding: 0px 10px 50px;
     }
 }

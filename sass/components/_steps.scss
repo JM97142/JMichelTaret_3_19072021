@@ -39,7 +39,7 @@
     }
     &__icon {
         color: $colour-shadow;
-        margin-right: 40px;
+        margin-right: 20px;
     }
     @include for-tablet {
         &__icon {
@@ -47,23 +47,22 @@
         }
     }
     @include for-phone-only {
-        padding: 10px;
         &__tuto {
             flex-direction: column;
         }
         &__heading {
-            margin: 50px 0px 50px 0px;
+            margin: 30px 0px;
         }
         &__element::before {
+            height: 2em;
+            width: 2em;
             font-size: 0.9em;
         }
         &__element {
-            border-radius: 30px;
-            font-size: 1.2em;
-            margin-left: -40px;
-        }
-        &__icon {
-            margin-right: 30px;
+            border-radius: 15px;
+            font-size: 1em;
+            padding: 25px;
+            margin-left: -50px;
         }
     }
 }
