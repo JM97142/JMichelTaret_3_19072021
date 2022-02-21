@@ -21,6 +21,7 @@ button {
     @include for-phone-only {
         font-size: 1em;
         margin-top: -20px;
+        margin-right: 20px;
     }
 }
 
