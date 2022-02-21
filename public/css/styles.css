@@ -311,14 +311,14 @@ button {
 .fiches-prev {
   border-radius: 40px;
   height: 350px;
-  width: 650px;
+  width: 100%;
   margin-bottom: 50px;
   line-height: 1.1em;
   background-color: #fff;
 }
 .fiches-prev__image {
   border-radius: 40px 40px 0px 0px;
-  width: 650px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
   cursor: pointer;
@@ -327,9 +327,9 @@ button {
   color: #278870;
   background-color: #99e2d0;
   position: absolute;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
-  margin-left: 10px;
+  right: 5em;
   margin-top: 40px;
   font-weight: bold;
 }
@@ -352,14 +352,17 @@ button {
 }
 @media screen and (min-device-width: 426px) and (max-width: 768px) {
   .fiches-prev {
-    width: 350px;
+    height: 400px;
   }
   .fiches-prev__badge {
-    padding: 20px;
-    margin-right: 100px;
+    right: 4.5em;
+    margin-top: 20px;
   }
   .fiches-prev__image {
-    width: 350px;
+    height: 300px;
+  }
+  .fiches-prev__heading {
+    font-size: 1.3em;
   }
 }
 @media screen and (max-device-width: 425px) {
@@ -369,19 +372,14 @@ button {
   }
   .fiches-prev__image {
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
     height: 200px;
     object-fit: cover;
   }
   .fiches-prev__badge {
-    color: #278870;
-    background-color: #99e2d0;
-    position: absolute;
     padding: 10px;
     border-radius: 5px;
     right: 2rem;
     margin-top: 10px;
-    font-weight: bold;
   }
   .fiches-prev__heading {
     font-size: 1.2em;
@@ -431,8 +429,21 @@ button {
   margin-right: 20px;
 }
 @media screen and (min-device-width: 426px) and (max-width: 768px) {
+  .step__tuto {
+    flex-direction: column;
+  }
+  .step__element::before {
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 0.8em;
+    margin: 0px;
+  }
+  .step__element {
+    padding: 40px 100px;
+    font-size: 1.7em;
+  }
   .step__icon {
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 @media screen and (max-device-width: 425px) {
@@ -505,7 +516,7 @@ button {
   }
   .page__sub-heading::after {
     content: "";
-    width: 4rem;
+    width: 3rem;
     height: 0.45rem;
     background-color: #99e2d0;
     position: absolute;
@@ -520,6 +531,7 @@ button {
   .page__heading {
     font-size: 1em;
     margin-bottom: -50px;
+    padding: 0px 5px;
   }
   .page__sub-heading {
     margin-top: 50px;
@@ -530,7 +542,7 @@ button {
   }
   .page__sub-heading::after {
     content: "";
-    width: 4.5rem;
+    width: 3rem;
     height: 0.25rem;
     background-color: #99e2d0;
     position: absolute;
@@ -772,7 +784,7 @@ button {
 }
 @media screen and (max-device-width: 425px) {
   .page {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     padding: 0px 10px 50px;
   }
 }

@@ -20,13 +20,13 @@
 .fiches-prev {
     @include box-radius;
     height: 350px;
-    width: 650px;
+    width: 100%;
     margin-bottom: 50px;
     line-height: 1.1em;
     background-color: $colour-white;
     &__image {
         @include img-radius;
-        width: 650px;
+        width: 100%;
         height: 250px;
         object-fit: cover;
         cursor: pointer;
@@ -52,13 +52,15 @@
         font-size: 1em;
     }
     @include for-tablet {
-        width: 350px;
+        height: 400px;
         &__badge {
             @include badge-fiches-tablet;
-            margin-right: 100px;
         }
         &__image {
-            width: 350px;
+            height: 300px;
+        }
+        &__heading {
+            font-size: 1.3em;
         }
     }
     @include for-phone-only {
@@ -66,7 +68,6 @@
         height: auto;
         &__image {
             @include img-radius-mobile;
-            width: 100%;
             height: 200px;
             object-fit: cover;
         }

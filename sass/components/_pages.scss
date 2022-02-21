@@ -35,7 +35,7 @@
         }
         &__sub-heading::after {
             content: "";
-            width: 4rem;
+            width: 3rem;
             height: .45rem;
             background-color: $colour-valid;
             position: absolute;
@@ -50,13 +50,14 @@
         &__heading {
             font-size: 1em;
             margin-bottom: -50px;
+            padding: 0px 5px;
         }
         &__sub-heading {
             @include page-sub-mobile;
         }
         &__sub-heading::after {
             content: "";
-            width: 4.5rem;
+            width: 3rem;
             height: .25rem;
             background-color: $colour-valid;
             position: absolute;

@@ -50,26 +50,23 @@
     @include colour-badge;
     background-color: $colour-valid;
     position: absolute;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
-    margin-left: 10px;
+    right: 5em;
     margin-top: 40px;
     font-weight: bold;
 }
 
 @mixin badge-fiches-tablet {
-    padding: 20px;
+    right: 4.5em;
+    margin-top: 20px;
 }
 
 @mixin badge-fiches-mobile {
-    @include colour-badge;
-    background-color: $colour-valid;
-    position: absolute;
     padding: 10px;
     border-radius: 5px;
     right: 2rem;
     margin-top: 10px;
-    font-weight: bold;
 }
 
 @mixin colour-badge($colour:$colour-valid) {
